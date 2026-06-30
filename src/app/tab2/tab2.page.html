@@ -1,0 +1,78 @@
+<ion-header>
+  <ion-toolbar color="tertiary">
+    <ion-title>Kelola Produk</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <!-- Ringkasan Informasi Toko -->
+  <ion-card color="light">
+    <ion-card-header>
+      <ion-card-title>Informasi Toko</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-grid>
+        <ion-row>
+          <ion-col>
+            <p style="margin: 0;">Total Produk</p>
+            <ion-note color="primary" style="font-size: 18px; font-weight: bold;">42 Item</ion-note>
+          </ion-col>
+          <ion-col>
+            <p style="margin: 0;">Produk Terlaris</p>
+            <ion-note color="success" style="font-size: 18px; font-weight: bold;">Laptop ROG</ion-note>
+          </ion-col>
+          <ion-col>
+            <p style="margin: 0;">Promo Aktif</p>
+            <ion-note color="warning" style="font-size: 18px; font-weight: bold;">3 Promo</ion-note>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-card-content>
+  </ion-card>
+
+  <!-- Form Input Tambah Produk -->
+  <h3 class="ion-margin-horizontal" style="font-weight: bold;">Tambah Produk Baru</h3>
+  <ion-list lines="full">
+    <ion-item>
+      <ion-input label="Nama Produk" labelPlacement="stacked" placeholder="Masukkan nama produk"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-textarea label="Deskripsi Produk" labelPlacement="stacked" placeholder="Detail deskripsi produk..."></ion-textarea>
+    </ion-item>
+
+    <ion-item>
+      <ion-input label="Harga (Rp)" type="number" labelPlacement="stacked" placeholder="0"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-input label="Jumlah Stok" type="number" labelPlacement="stacked" placeholder="0"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-select label="Kategori" labelPlacement="stacked" placeholder="Pilih Kategori">
+        <ion-select-option value="elektronik">Elektronik</ion-select-option>
+        <ion-select-option value="pakaian">Pakaian</ion-select-option>
+        <ion-select-option value="gadget">Gadget</ion-select-option>
+        <ion-select-option value="fashion">Fashion</ion-select-option>
+        <ion-select-option value="buku">Buku</ion-select-option>
+      </ion-select>
+    </ion-item>
+
+    <ion-item>
+      <ion-toggle color="success" checked>Publikasikan ke Toko</ion-toggle>
+    </ion-item>
+  </ion-list>
+
+  <div class="ion-padding">
+    <ion-button expand="block" color="success">
+      <ion-icon name="cloud-upload-outline" slot="start"></ion-icon> Simpan Produk Baru
+    </ion-button>
+  </div>
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar color="light">
+    <p style="text-align: center; margin: 5px 0; font-size: 12px;">Panel Admin Toko v1.0</p>
+  </ion-toolbar>
+</ion-footer>
